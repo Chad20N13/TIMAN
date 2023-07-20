@@ -1,16 +1,13 @@
 package main
 
 import (
-
- "fmt"
- pkg001 "timan/pkg" 
-
+	"fmt"
+	dump "timan/pkg/dump"
+	test "timan/pkg/test"
 )
 
 func main() {
-    fmt.Println("Hello, world.")
-    pkg001.Dddd()
+	fmt.Println("Hello, world.")
+	test.Dddd()
+	dump.Bigta()
 }
-
-
-
