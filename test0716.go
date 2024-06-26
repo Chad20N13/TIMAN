@@ -20,6 +20,16 @@ func main() {
 	fmt.Println("字节数据：", data)
 	fmt.Println("字符串数据：", string(data))
 	fmt.Println("所获取字节的长度：", count)
+
+	slice001 := make([]int, 10, 100)
+	fmt.Println(slice001)
+	fmt.Println(len(slice001))
+	fmt.Println(cap(slice001))
+	slice001[0] = 10
+	slice001[1] = 11
+	fmt.Println(slice001)
+	fmt.Println(len(slice001))
+	fmt.Println(cap(slice001))
 }
 
 // 字节数据： [116 104 105 115 32 105 115 32 97 32 116 101 115 116 32 48 54 50 54 46 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
