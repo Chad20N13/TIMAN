@@ -1,16 +1,25 @@
 package abcd
 
 import (
-
-    "fmt"
+	"fmt"
 )
 
 func Dddd() {
-            a := "chad001" //define a;
-            fmt.Println("define var a: "+a)
-            fmt.Println(&a)
-            p := &a   //pointer p refer to address of a;
-            fmt.Println("pointer p refer to address of a: ",&p)
-            fmt.Println(&a)
-            fmt.Println("print value of pointer p:" ,*p)
+
+	defer fmt.Printf("test defer1")
+	defer fmt.Printf("test defer2")
+	a := "chad001" //define a;
+
+	fmt.Println("define var a: " + a)
+
+	fmt.Println("memory address of a :", &a)
+
+	p := &a //define pointer P , directing to address of a,  实际上这个p里面存放的东西，就是变量a的内存地址信息
+
+	fmt.Println("print value of pointer p:", *p)
+
+	var ptr *string = &a
+	fmt.Println("print value of pointer p:", ptr)
+	fmt.Println("print value of a:", *ptr)
+
 }
