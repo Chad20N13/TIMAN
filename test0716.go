@@ -30,6 +30,21 @@ func main() {
 	fmt.Println(slice001)
 	fmt.Println(len(slice001))
 	fmt.Println(cap(slice001))
+
+	slice002 := []int{1, 2, 3, 4}
+	fmt.Println(slice002)
+	fmt.Println(len(slice002))
+	fmt.Println(cap(slice002))
+
+	slice003 := []byte("abc")
+	chars := []byte("cedf")
+	fmt.Println(slice003)
+	fmt.Println(len(slice003))
+	fmt.Println(cap(slice003))
+
+	slice003 = append(chars, slice003...)
+	fmt.Println(slice003)
+
 }
 
 // 字节数据： [116 104 105 115 32 105 115 32 97 32 116 101 115 116 32 48 54 50 54 46 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
