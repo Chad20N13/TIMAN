@@ -37,12 +37,16 @@ func main() {
 	fmt.Println(cap(slice002))
 
 	slice003 := []byte("abc")
-	chars := []byte("cedf")
+	chars := []byte("chad")
 	fmt.Println(slice003)
 	fmt.Println(len(slice003))
 	fmt.Println(cap(slice003))
+	slice003 = append(slice003, []byte("  hello ")...)
+
+	fmt.Println(slice003)
 
 	slice003 = append(chars, slice003...)
+
 	fmt.Println(slice003)
 
 }
